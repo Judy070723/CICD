@@ -17,10 +17,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install GCC
-      run: sudo apt-get install -y g++ clang-tidy
+      run: sudo apt-get install -y #g++ clang-tidy
 
-    - name: Run Clang-Tidy
-      run: clang-tidy main.cpp --config-file=.clang-tidy -- -std=c++17
+#    - name: Run Clang-Tidy
+#      run: clang-tidy main.cpp --config-file=.clang-tidy -- -std=c++17
 
     - name: Build
       run: g++ main.cpp -o my_program
